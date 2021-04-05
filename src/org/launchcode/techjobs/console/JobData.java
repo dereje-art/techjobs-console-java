@@ -96,7 +96,7 @@ public class JobData {
             for (String column : row.keySet()) {
                 String aValue = row.get(column);
 
-                if (aValue.contains(value.toUpperCase() )) {
+                if (aValue.toUpperCase().contains(value.toUpperCase() )) {
                     jobs.add(row);
                     break;
 
